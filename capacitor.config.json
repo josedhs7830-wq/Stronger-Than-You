@@ -1,0 +1,7 @@
+{
+  "appId": "com.strongerthanyou.game",
+  "appName": "Stronger Than You",
+  "webDir": "www",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": true }
+}
