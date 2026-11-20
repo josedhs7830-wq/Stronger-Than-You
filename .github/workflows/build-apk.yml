@@ -1,4 +1,4 @@
-name: Build APK
+name: stronger-than-you
 on:
   workflow_dispatch:
   push:
@@ -30,7 +30,7 @@ jobs:
             cp $R/mipmap-$d/ic_launcher.png $R/mipmap-$d/ic_launcher_foreground.png
           done
       - run: npx cap sync android
-      - name: Build debug APK
+      - name: stronger-than-you
         working-directory: android
         run: chmod +x gradlew && ./gradlew assembleDebug
       - uses: actions/upload-artifact@v4
